@@ -1,0 +1,513 @@
+/* Set colors */
+:root {
+    --primary-color: #1a1a1a; /* Dark Gray */
+    --secondary-color: #2c2c2c; /* Medium Gray */
+    --background-color: #f5f7fa; /* Light Gray */
+    --background-gradient: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light to Medium Blue Gradient */
+    --header-background: var(--primary-color); /* Reuse primary color */
+    --footer-background: var(--secondary-color); /* Reuse secondary color */
+    --text-color: #333; /* Dark Gray for text */
+    --muted-text-color: #777; /* Medium Gray for muted text */
+    --highlight-color: #ff6347; /* Tomato Red for highlights */
+    --border-color: #e0e0e0; /* Light Gray for borders */
+    --link-color: #1e90ff; /* Dodger Blue for links */
+    --link-hover-color: #104e8b; /* Darker Blue for link hover */
+    --button-background: var(--primary-color); /* Button background color */
+    --button-hover-background: var(--highlight-color); /* Button hover background color */
+    --input-border-color: var(--border-color); /* Input border color */
+    --input-focus-border-color: var(--highlight-color); /* Input focus border color */
+    --card-background: #ffffff; /* White for card background */
+    --card-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+}
+
+/* Set Fonts */
+:root {
+    --font-family: 'Arial', sans-serif; /* Base font family */
+    --font-size-base: 1rem; /* Base font size */
+    --font-size-small: 0.875rem; /* Small font size */
+    --font-size-large: 1.25rem; /* Large font size */
+}
+    
+/* General styles for the body */
+body, header, footer, main, section, nav, ul, li, a, h1, h2, h3, h4, h5, h6, p, blockquote, pre, b, i, u, br, div, span, ol, dl, dt, dd, figure, img, figcaption, strong, em, abbr, cite, code, del, ins, kbd, mark, s, samp, small, sub, sup, time, var, dfn, q, form, label, input, textarea, select, fieldset, legend, button, details, summary, dialog, menu, table, caption, thead, tbody, tfoot, tr, th, td, audio, video, iframe, object, embed, canvas, svg, circle {
+    font-family: var(--font-family);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+}
+
+/* Header styles */
+header {
+    background: var(--header-background);
+    color: var(--text-color-light);
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+
+/* Footer styles */
+footer {
+    background: var(--footer-background);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 2em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styles */
+main {
+    padding: 2em;
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    border-radius: 0.5em;
+    margin: 2em auto;
+    max-width: 75em;
+}
+
+/* Section styles */
+section {
+    margin: 2em 0;
+    padding: 2em;
+    background: var(--background-color-light);
+    border: 0.0625em solid var(--border-color);
+    border-radius: 0.5em;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    background: var(--primary-color);
+    margin: 0;
+    border-radius: 0.5em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+/* Specific heading styles */
+h1 {
+    font-size: 2.5em;
+    color: var(--text-color-dark);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.75em;
+    color: var(--text-color-medium);
+}
+
+h4 {
+    font-size: 1.5em;
+    color: var(--text-color-light-medium);
+}
+
+h5 {
+    font-size: 1.25em;
+    color: var(--text-color-light);
+}
+
+h6 {
+    font-size: 1em;
+    color: var(--muted-text-color);
+}
+
+/* Paragraph styles */
+p {
+    margin: 1.5em 0;
+    line-height: 1.6;
+    color: var(--text-color-light-medium);
+}
+
+/* Blockquote styles */
+blockquote {
+    border-left: 4px solid var(--highlight-color);
+    margin: 1.5em 0;
+    padding-left: 1.5em;
+    color: var(--text-color-light);
+    font-style: italic;
+    background: var(--background-color-light);
+}
+
+/* Preformatted text styles */
+pre {
+    background: var(--background-color-light);
+    padding: 1.5em;
+    overflow: auto;
+    border-radius: 0.5em;
+}
+
+/* Bold and strong text styles */
+b, strong {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Italic and emphasized text styles */
+i, em {
+    font-style: italic;
+    color: var(--text-color-light);
+}
+
+/* Underlined text styles */
+u {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
+/* Line break styles */
+br {
+    display: block;
+    margin: 1em 0;
+}
+
+/* Div styles */
+div {
+}
+
+/* Span styles */
+span {
+}
+
+/* Unordered list styles */
+ul {
+    list-style-type: disc;
+    margin: 1.5em 0;
+    padding-left: 2.5em;
+}
+
+/* Ordered list styles */
+ol {
+    list-style-type: decimal;
+    margin: 1.5em 0;
+    padding-left: 2.5em;
+}
+
+/* Definition list styles */
+dl {
+    margin: 1.5em 0;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+dd {
+    margin-left: 2.5em;
+    color: var(--text-color);
+}
+
+/* Figure and figcaption styles */
+figure {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: var(--muted-text-color);
+}
+
+/* Abbreviation styles */
+abbr {
+    border-bottom: 0.0625em dotted var(--text-color);
+    cursor: help;
+    text-decoration: none;
+}
+
+/* Citation styles */
+cite {
+    font-style: italic;
+    color: var(--muted-text-color);
+}
+
+/* Code styles */
+code {
+    background: var(--background-color);
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    font-family: var(--font-family-monospace);
+}
+
+/* Deleted text styles */
+del {
+    text-decoration: line-through;
+    color: var(--highlight-color);
+}
+
+/* Inserted text styles */
+ins {
+    text-decoration: underline;
+    color: var(--inserted-text-color);
+}
+
+/* Keyboard input styles */
+kbd {
+    background: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    font-family: var(--font-family-monospace);
+}
+
+/* Marked text styles */
+mark {
+    background: var(--highlight-background);
+    color: var(--text-color);
+}
+
+/* Strikethrough text styles */
+s {
+    text-decoration: line-through;
+    color: var(--highlight-color);
+}
+
+/* Sample output styles */
+samp {
+    font-family: var(--font-family-monospace);
+    background: var(--background-color-light);
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+}
+
+/* Small text styles */
+small {
+    font-size: var(--font-size-small);
+    color: var(--muted-text-color);
+}
+/* Subscript styles */
+sub {
+    vertical-align: sub;
+    font-size: var(--font-size-small);
+    color: var(--muted-text-color);
+}
+
+/* Superscript styles */
+sup {
+    vertical-align: super;
+    font-size: var(--font-size-small);
+    color: var(--muted-text-color);
+}
+
+/* Time element styles */
+time {
+    color: var(--muted-text-color);
+    font-style: italic;
+}
+
+/* Fieldset and legend styles */
+fieldset {
+    border: 0.0625em solid var(--border-color);
+    padding: 1.5em;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Label styles */
+label {
+    display: inline-block;
+    margin: 0.75em 0;
+    color: var(--text-color);
+}
+
+/* Input, textarea, and select styles */
+input, textarea, select {
+    display: block;
+    margin: 0.75em 0;
+    padding: 0.75em;
+    border: 0.0625em solid var(--input-border-color);
+    border-radius: 0.25em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+button {
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.25em;
+    background: var(--button-background);
+    color: var(--text-color-light);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: var(--button-hover-background);
+}
+
+/* Details and summary styles */
+details {
+    margin: 1.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Dialog styles */
+dialog {
+    border: 0.0625em solid var(--border-color);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    background: var(--card-background);
+}
+
+/* Menu styles */
+menu {
+    list-style: none;
+    padding: 0;
+}
+
+menu li {
+    margin: 0.75em 0;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+}
+
+/* Iframe styles */
+iframe {
+    width: 100%;
+    border: none;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+}
+
+/* Object styles */
+object {
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+/* Embed styles */
+embed {
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+/* Canvas styles */
+canvas {
+    display: block;
+    margin: 1.5em 0;
+    border: 0.0625em solid var(--border-color-light);
+    border-radius: 0.5em;
+}
+
+/* SVG styles */
+svg {
+    display: block;
+    margin: 1.5em 0;
+}
+
+/* Circle styles */
+circle {
+    stroke: var(--circle-stroke-color);
+    stroke-width: 0.1875em;
+    fill: var(--highlight-color);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+/* Caption styles */
+caption {
+    font-weight: bold;
+    margin-bottom: 0.75em;
+    color: var(--text-color);
+}
+
+/* Thead styles */
+thead {
+    background: var(--background-color);
+}
+
+/* Tbody styles */
+tbody {
+    background: var(--card-background);
+}
+
+/* Tfoot styles */
+tfoot {
+    background: var(--card-background);
+}
+
+/* Tr styles */
+tr {
+    border-bottom: 0.0625em solid var(--border-color);
+}
+
+tr:hover {
+    background: var(--background-color);
+}
+
+/* Th styles */
+th {
+    padding: 0.75em;
+    text-align: left;
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+/* Td styles */
+td {
+    padding: 0.75em;
+    text-align: left;
+}
+
+/* Audio and video styles */
+audio, video {
+    display: block;
+    margin: 1.5em 0;
+    border-radius: 0.5em;
+}
