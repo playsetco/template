@@ -334,26 +334,6 @@ br {
     font-weight: normal;
 }
 
-/* Div styles */
-div {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    font-weight: normal;
-}
-
-/* Span styles */
-span {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    font-weight: normal;
-}
-
 /* Unordered list styles */
 ul {
     margin: 1.5em 0;
