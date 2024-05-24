@@ -1,24 +1,33 @@
 /* Set colors */
 :root {
-    --primary-color: #1a1a1a; /* Dark Gray */
-    --secondary-color: #2c2c2c; /* Medium Gray */
-    --background-color: #f5f7fa; /* Light Gray */
-    --background-gradient: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light to Medium Blue Gradient */
-    --header-background: var(--primary-color); /* Reuse primary color */
-    --footer-background: var(--secondary-color); /* Reuse secondary color */
-    --text-color: #333; /* Dark Gray for text */
-    --muted-text-color: #777; /* Medium Gray for muted text */
-    --highlight-color: #ff6347; /* Tomato Red for highlights */
-    --border-color: #e0e0e0; /* Light Gray for borders */
-    --link-color: #1e90ff; /* Dodger Blue for links */
-    --link-hover-color: #104e8b; /* Darker Blue for link hover */
-    --button-background: var(--primary-color); /* Button background color */
-    --button-hover-background: var(--highlight-color); /* Button hover background color */
-    --input-border-color: var(--border-color); /* Input border color */
-    --input-focus-border-color: var(--highlight-color); /* Input focus border color */
-    --card-background: #ffffff; /* White for card background */
-    --card-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+    --primary-color: #1a1a1a;
+    --secondary-color: #2c2c2c;
+    --background-color: #f5f7fa;
+    --background-gradient: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    --text-color: #333;
+    --muted-text-color: #777;
+    --highlight-color: #ff6347;
+    --border-color: #e0e0e0;
+    --link-color: #1e90ff;
+    --link-hover-color: #104e8b;
+    --button-background: var(--primary-color);
+    --button-hover-background: var(--highlight-color);
+    --input-border-color: var(--border-color);
+    --input-focus-border-color: var(--highlight-color);
+    --card-background: #ffffff;
+    --card-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    --fire-red: #ED4241;
+    --minty-green: #00ED7E;
+    --coral-blush: #FD6541;
+    --aqua-glow: #12FEFF;
+    --sunshine-orange: #FF8E29;
+    --golden-sunset: #FECA37;
+    --ocean-blue: #107BFF;
+    --violet-dream: #773BFF;
+    --magenta-mystery: #B61EEF;
+    --pink-splash: #FF3EE1;
 }
+    
 
 /* Set Fonts */
 :root {
